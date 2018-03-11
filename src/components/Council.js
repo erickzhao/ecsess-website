@@ -2,31 +2,31 @@ import React from 'react'
 
 export default ({ members, title, heading }) => (
   <div>
-    <section class="hero is-medium is-primary is-bold">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
+    <section className="hero is-medium is-primary is-bold">
+      <div className="hero-body">
+        <div className="container">
+          <h1 className="title is-1">
             {title}
           </h1>
-          <h2 class="subtitle">
+          <h2 className="subtitle">
             {heading}
           </h2>
         </div>
       </div>
     </section>
-    <section class="section">
-    <div class="container">
-      <div className="columns">
-          {members.map(m => (
-            <div className="column is-one-quarter">
-              <img src={m.photo} style={{maxHeight: 200}}/>
-              <br/>
-              {m.name}
-              <br/>
-              {m.position}
-            </div>
-          ))}
-      </div>
+    <section className="section">
+    <div className="container">
+      <div className="columns is-multiline">
+            {members.map(m => (
+              <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile">
+                <div className="card equal-height has-text-centered">
+                  <img className="is-center" src={m.photo} style={{maxHeight: 250}}/>
+                  <br/>
+                  {m.name} - {m.position}
+                </div>
+              </div>
+            ))}
+        </div>
     </div>
     </section>
   </div>
