@@ -14,16 +14,13 @@ export const ProductPageTemplate = ({
   fullImage,
   pricing,
 }) => (
-  <section className="section section--gradient">
+  <section className="section">
     <div className="container">
       <div className="section">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
+          <div className="column">
             <div className="content">
-              <div
-                className="full-width-image-container margin-top-0"
-                style={{ backgroundImage: `url(${image})` }}
-              >
+              <div className="full-width-image-container margin-top-0" style={{ backgroundImage: `url(${image})` }}>
                 <h2
                   className="has-text-weight-bold is-size-1"
                   style={{
