@@ -1,6 +1,22 @@
 import React from "react"
+import Council from "../components/Council"
 
 export default ({ data }) => {
-  console.log(data)
-  return <div>Hello world</div>
+  return <Council {...data.markdownRemark.frontmatter}/>
 }
+
+export const councilPageQuery = graphql`
+  query CouncilPage($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      frontmatter {
+        title
+        heading
+        members {
+          name
+          position
+          photo
+        }
+      }
+    }
+  }
+`
