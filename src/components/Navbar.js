@@ -14,7 +14,7 @@ const Navbar = () => (
             <img src={logo} alt="ECSESS" style={{ maxWidth: '88px' }} />
           </figure>
         </Link>
-        <div class="navbar-burger" data-target="navMenu">
+        <div className="navbar-burger" data-target="navMenu">
           <span></span>
           <span></span>
           <span></span>
