@@ -1,19 +1,7 @@
 import React from 'react'
 
-export default ({ members, title, heading }) => (
+export default ({ members }) => (
   <div>
-    <section className="hero is-medium is-primary is-bold">
-      <div className="hero-body">
-        <div className="container">
-          <h1 className="title is-1">
-            {title}
-          </h1>
-          <h2 className="subtitle">
-            {heading}
-          </h2>
-        </div>
-      </div>
-    </section>
     <section className="section">
     <div className="container">
       <div className="columns is-multiline">

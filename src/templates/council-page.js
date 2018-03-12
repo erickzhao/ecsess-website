@@ -1,8 +1,14 @@
 import React from "react"
+import Header from "../components/Header"
 import Council from "../components/Council"
 
 export default ({ data }) => {
-  return <Council {...data.markdownRemark.frontmatter}/>
+  return (
+    <div>
+      <Header {...data.markdownRemark.frontmatter}/>
+      <Council {...data.markdownRemark.frontmatter}/>
+    </div>
+  )
 }
 
 export const councilPageQuery = graphql`
