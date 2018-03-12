@@ -15,6 +15,7 @@ export const councilPageQuery = graphql`
           name
           position
           photo
+          description
         }
       }
     }

@@ -1,10 +1,8 @@
 @import "~bulma/sass/utilities/initial-variables";
 
-$kaldi-red: #FD461E;
-$kaldi-red-invert: #fff;
 
-$primary: $kaldi-red;
-$primary-invert: $kaldi-red-invert;
+$primary: rgb(0, 177, 80);
+$primary-invert: rgb(255, 255, 255);
 
 // Helper Classes
 .full-width-image-container {
@@ -23,6 +21,15 @@ $primary-invert: $kaldi-red-invert;
 
 .margin-top-0 {
   margin-top: 0 !important;
+}
+
+.ecse--card-equal-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.ecse--card-equal-height .card-footer {
+  margin-top: auto;
 }
 
 @import "~bulma";
