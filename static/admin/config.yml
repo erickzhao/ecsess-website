@@ -37,3 +37,11 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Members, name: members, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Position, name: position, widget: string}, {label: Photo, name: photo, widget: image}, {label: Description, name: description, widget: text}]}
+      - file: "src/pages/faq/index.md"
+        label: "Frequently Asked Questions"
+        name: "faq"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "faq-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Questions, name: questions, widget: list, fields: [{label: Question, name: question, widget: string}, {label: Answer, name: answer, widget: text}]}
