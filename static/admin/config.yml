@@ -49,4 +49,4 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "council-page"}
           - {label: Title, name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
-          - {label: Members, name: members, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Position, name: position, widget: string}, {label: Photo, name: photo, widget: image}]}
+          - {label: Members, name: members, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Position, name: position, widget: string}, {label: Photo, name: photo, widget: image}, {label: Description, name: description, widget: text}]}
