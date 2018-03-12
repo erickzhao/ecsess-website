@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const Footer = () => (
   <footer class="footer ecse--is-primary">
-    <div class="level">
+    <div class="level container">
       <div class="level-item">
         <div>
           <p class="title is-5">Quick Navigation</p>

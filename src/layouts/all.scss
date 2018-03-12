@@ -34,6 +34,10 @@ $primary-invert: rgb(255, 255, 255);
 .footer {
   .level {
     align-items: baseline;
+    .level-item {
+      justify-content: start;
+      margin: 20px;
+    }
   }
   &.ecse--is-primary {
     .title, & {
