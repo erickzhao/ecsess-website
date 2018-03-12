@@ -1,7 +1,6 @@
 @import "~bulma/sass/utilities/initial-variables";
 
-
-$primary: rgb(0, 177, 80);
+$primary: $turquoise;
 $primary-invert: rgb(255, 255, 255);
 
 // Helper Classes
@@ -30,6 +29,27 @@ $primary-invert: rgb(255, 255, 255);
 }
 .ecse--card-equal-height .card-footer {
   margin-top: auto;
+}
+
+.footer {
+  .level {
+    align-items: baseline;
+  }
+  &.ecse--is-primary {
+    .title, & {
+      color: $white-ter;
+    }
+    background-color: $grey-darker;
+  }
+  a {
+    &:hover, &:focus, &:active {
+      color: $primary;
+    }
+  }
+}
+
+a {
+  transition: 0.3s cubic-bezier(0.215, 0.610, 0.355, 1) all;
 }
 
 @import "~bulma";
