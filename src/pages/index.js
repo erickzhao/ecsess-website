@@ -12,16 +12,16 @@ export default class IndexPage extends React.Component {
         <Header title={ 'ECSESS' } heading={ 'McGill Electrical, Computer, Software Engineering Student Society' }/>
       <section className="section">
         <div className="container">
+          <h2 class><h2>
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'blog-post')
             .map(({ node: post }) => (
               <div
-                className="content"
-                style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                className="content box"
                 key={post.id}
               >
                 <p>
-                  <Link className="has-text-primary title" to={post.fields.slug}>
+                  <Link className="has-text-primary subtitle" to={post.fields.slug}>
                     {post.frontmatter.title}
                   </Link>
                   <span> &bull; </span>
