@@ -3,6 +3,7 @@ import Header from "../components/Header"
 import FAQ from "../components/FAQ"
 
 export default ({ data }) => {
+  console.log(data);
   return (
     <div>
       <Header {...data.markdownRemark.frontmatter}/>
@@ -17,6 +18,10 @@ export const faqPageQuery = graphql`
       frontmatter {
         title
         heading
+        questions {
+          question
+          answer
+        }
       }
     }
   }
