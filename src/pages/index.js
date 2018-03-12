@@ -12,7 +12,7 @@ export default class IndexPage extends React.Component {
         <Header title={ 'ECSESS' } heading={ 'McGill Electrical, Computer, Software Engineering Student Society' }/>
       <section className="section">
         <div className="container">
-          <h2 class><h2>
+          <h2 className="title">What's new?</h2>
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'blog-post')
             .map(({ node: post }) => (
