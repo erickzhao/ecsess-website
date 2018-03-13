@@ -1,26 +1,22 @@
 import React from "react"
 import Header from "../components/Header"
-import FAQ from "../components/FAQ"
+import FinanceChart from "../components/FinanceChart"
 
 export default ({ data }) => {
   return (
     <div>
       <Header {...data.markdownRemark.frontmatter}/>
-      <FAQ {...data.markdownRemark.frontmatter}/>
+      <FinanceChart {...data.markdownRemark.frontmatter}/>
     </div>
   )
 }
 
-export const faqPageQuery = graphql`
-  query FAQPage($id: String!) {
+export const financePageQuery = graphql`
+  query FinancePage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
         heading
-        questions {
-          question
-          answer
-        }
       }
     }
   }

@@ -45,3 +45,11 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Questions, name: questions, widget: list, fields: [{label: Question, name: question, widget: string}, {label: Answer, name: answer, widget: text}]}
+      - file: "src/pages/finance/index.md"
+        label: "Finances"
+        name: "finance"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "faq-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Finances, names: Finances, widget: list, fields: [{label: Semester, name: semester, widget: string}, {label: Expenditures, name: expenditures, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Cost, name: cost, widget: number}]}]}
