@@ -52,4 +52,4 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "faq-page"}
           - {label: Title, name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
-          - {label: Finances, names: Finances, widget: list, fields: [{label: Semester, name: semester, widget: string}, {label: Expenditures, name: expenditures, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Cost, name: cost, widget: number}]}]}
+          - {label: Finances, name: Finances, widget: list, fields: [{label: Semester, name: semester, widget: string}, {label: Expenditures, name: expenditures, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Cost, name: cost, widget: number}]}]}

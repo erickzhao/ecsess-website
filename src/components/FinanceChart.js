@@ -1,10 +1,14 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+let Highcharts
+let Exporting
+let Drilldown
+
 if (typeof document !== 'undefined') {
-  const HighCharts = require('highcharts');
-  const Exporting = require('highcharts/modules/exporting');
-  const Drilldown = require('highcharts/modules/drilldown');
+  Highcharts = require('highcharts');
+  Exporting = require('highcharts/modules/exporting');
+  Drilldown = require('highcharts/modules/drilldown');
   // Initialize exporting module.
   Exporting(Highcharts);
   Drilldown(Highcharts);
@@ -15,8 +19,9 @@ class FinanceChart extends React.Component {
     super();
     this.state = {...props};
   }
-
+  
   componentDidMount() {
+    this.generateSeries(this.state.finances);
     Highcharts.chart('container', {
       chart: {
           type: 'pie'
@@ -95,7 +100,7 @@ class FinanceChart extends React.Component {
 
   render() {
     return (
-      <section class="section">
+      <section className="section">
       <div id='container'></div>
       </section>
     )

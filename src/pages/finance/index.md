@@ -2,7 +2,7 @@
 templateKey: finance-page
 title: Finances
 heading: How are we spending your money?
-undefined:
+finances:
   - expenditures:
       - cost: '1386'
         name: Fall Banquet

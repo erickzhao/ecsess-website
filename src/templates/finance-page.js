@@ -17,6 +17,13 @@ export const financePageQuery = graphql`
       frontmatter {
         title
         heading
+        finances {
+          semester
+          expenditures {
+            name
+            cost
+          }
+        }
       }
     }
   }
