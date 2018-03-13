@@ -1,12 +1,14 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Highcharts from 'highcharts'
 
-import Exporting from 'highcharts/modules/exporting';
-import Drilldown from 'highcharts/modules/drilldown';
-// Initialize exporting module.
-Exporting(Highcharts);
-Drilldown(Highcharts);
+if (typeof document !== 'undefined') {
+  const HighCharts = require('highcharts');
+  const Exporting = require('highcharts/modules/exporting');
+  const Drilldown = require('highcharts/modules/drilldown');
+  // Initialize exporting module.
+  Exporting(Highcharts);
+  Drilldown(Highcharts);
+}
 
 class FinanceChart extends React.Component {
   constructor(props) {
