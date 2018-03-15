@@ -42,6 +42,11 @@ const Navbar = () => (
                   FAQ
                 </Link>
               </div>
+              <div className="navbar-item">
+                <Link to="/finance">
+                  Finances
+                </Link>
+              </div>
             </div>
           </div>
           
