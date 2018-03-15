@@ -40,7 +40,7 @@ class FinanceChart extends React.Component {
   }
   
   componentDidMount() {
-    const { toplevel, drilldown } = this.generateSeries(this.state.finances);
+    const { toplevel, drilldown } = this.generateSeries(this.state.semesters);
     Highcharts.chart('container', {
       chart: {
         type: 'pie'
