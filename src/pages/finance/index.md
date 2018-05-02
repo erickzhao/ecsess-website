@@ -8,6 +8,8 @@ semesters:
         name: Fall Banquet
       - cost: '50'
         name: Professor Speaker Series
+      - cost: '50'
+        name: asdashud
     semester: Fall 2017
   - expenditures:
       - cost: '1114.96'
